@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pravanya | Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ──────────────── LOADER ──────────────── -->
+    <div id="loader" class="loader">
+        <div class="loader-inner">
+            <span class="loader-text">&lt;Loading /&gt;</span>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ──────────────── CURSOR ──────────────── -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- ──────────────── NAV ──────────────── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-bracket">&lt;</span>
+            <span class="brand-name">Pravanya</span>
+            <span class="brand-bracket">/&gt;</span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+            <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+            <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+            <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+            <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+            <li><a href="#hobbies" class="nav-link" data-section="hobbies">Hobbies</a></li>
+            <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ──────────────── PROGRESS BAR ──────────────── -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section id="home" class="section hero-section">
+        <div class="hero-bg">
+            <div class="particles" id="particles"></div>
+            <div class="hero-glow"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">👋 Welcome to my portfolio</div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="highlight-name">N.prasanna</span>
+            </h1>
+            <div class="hero-typewriter">
+                <span>I'm a </span>
+                <span class="typewriter" id="typewriter"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <p class="hero-desc">
+                Passionate about crafting elegant solutions to complex problems.
+                I build modern web applications with a focus on performance, accessibility, and beautiful user
+                experiences.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> View Projects
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i> Let's Talk
+                </a>
+            </div>
+            <div class="hero-socials">
+                <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="hero-avatar-wrapper">
+            <div class="avatar-ring-outer"></div>
+            <div class="avatar-ring-inner"></div>
+            <div class="hero-avatar">
+                <div class="avatar-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <div class="floating-badge badge-1"><i class="fas fa-code"></i> Developer</div>
+            <div class="floating-badge badge-2"><i class="fas fa-palette"></i> Designer</div>
+            <div class="floating-badge badge-3"><i class="fas fa-brain"></i> Problem Solver</div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ══════════════ ABOUT ══════════════ -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">01 // About Me</span>
+                <h2 class="section-title">Who I Am</h2>
+                <p class="section-subtitle">A brief introduction about myself and what drives me.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrap reveal">
+                    <div class="about-image-card">
+                        <div class="about-avatar-lg">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="about-image-decoration"></div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card reveal-stagger">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-card reveal-stagger">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Projects Done</span>
+                        </div>
+                        <div class="stat-card reveal-stagger">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <h3>Full-Stack Developer & Creative Thinker</h3>
+                    <p>
+                        Hello! N.prasanna, a dedicated software developer with a passion for turning ideas into
+                        reality through clean and efficient code. I specialize in building responsive web applications
+                        and love exploring new technologies.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me reading tech articles, solving puzzles, or exploring
+                        photography. I believe in continuous learning and always strive to grow both professionally and
+                        personally.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>India</span></div>
+                        <div class="info-item"><i class="fas fa-graduation-cap"></i><span>B.Tech CSE</span></div>
+                        <div class="info-item"><i class="fas fa-briefcase"></i><span>Open to Work</span></div>
+                        <div class="info-item"><i class="fas fa-language"></i><span>English, Telugu, Hindi</span></div>
+                    </div>
+                    <a href="#resume" class="btn btn-primary mt-2">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ EDUCATION ══════════════ -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">02 // Education</span>
+                <h2 class="section-title">Academic Journey</h2>
+                <p class="section-subtitle">My educational background and qualifications.</p>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="edu-icon"><i class="fas fa-university"></i></div>
+                            <div>
+                                <h3>Bachelor of Technology — Computer Science & Engineering</h3>
+                                <span class="timeline-school">Dr.Rvr Nri University</span>
+                            </div>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="badge badge-primary"><i class="fas fa-calendar"></i> 2021 – 2025</span>
+                            <span class="badge badge-success"><i class="fas fa-star"></i> CGPA: 8.7 / 10</span>
+                        </div>
+                        <p>Focused on data structures, algorithms, operating systems, databases, software engineering,
+                            and machine learning. Participated in multiple hackathons and technical events.</p>
+                        <ul class="edu-highlights">
+                            <li>Class Representative for 3 consecutive semesters</li>
+                            <li>Core member of the Coding Club</li>
+                            <li>Led a team project on AI-based disease prediction</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="edu-icon"><i class="fas fa-school"></i></div>
+                            <div>
+                                <h3>Intermediate (MPC) — Class XII</h3>
+                                <span class="timeline-school">Sri Chaitanya Junior College</span>
+                            </div>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="badge badge-primary"><i class="fas fa-calendar"></i> 2019 – 2021</span>
+                            <span class="badge badge-success"><i class="fas fa-star"></i> 98.2%</span>
+                        </div>
+                        <p>Studied Mathematics, Physics, and Chemistry with a focus on logical reasoning and
+                            problem-solving skills that form the foundation of software development.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="edu-icon"><i class="fas fa-book"></i></div>
+                            <div>
+                                <h3>Secondary School — Class X</h3>
+                                <span class="timeline-school">St. Joseph's High School</span>
+                            </div>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="badge badge-primary"><i class="fas fa-calendar"></i> 2018 – 2019</span>
+                            <span class="badge badge-success"><i class="fas fa-star"></i> 10 CGPA</span>
+                        </div>
+                        <p>Achieved a perfect CGPA score. School topper and active participant in science exhibitions
+                            and mathematics olympiads.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ SKILLS ══════════════ -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">03 // Skills</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <p class="section-subtitle">Technologies and tools I work with.</p>
+            </div>
+
+            <div class="skills-tabs reveal">
+                <button class="skill-tab active" data-tab="languages">Languages</button>
+                <button class="skill-tab" data-tab="frontend">Frontend</button>
+                <button class="skill-tab" data-tab="backend">Backend</button>
+                <button class="skill-tab" data-tab="tools">Tools & Others</button>
+            </div>
+
+            <div class="skills-content">
+                <!-- Languages -->
+                <div class="skill-panel active" id="tab-languages">
+                    <div class="skills-grid">
+                        <div class="skill-card reveal-stagger" data-percent="92">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-info"><span class="skill-name">Python</span><span
+                                    class="skill-level">Advanced</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="92"></div>
+                            </div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-card reveal-stagger" data-percent="88">
+                            <div class="skill-icon" style="color:#f7df1e"><i class="fab fa-js"></i></div>
+                            <div class="skill-info"><span class="skill-name">JavaScript</span><span
+                                    class="skill-level">Advanced</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="88"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-card reveal-stagger" data-percent="80">
+                            <div class="skill-icon" style="color:#00599c"><i class="fas fa-copyright"></i></div>
+                            <div class="skill-info"><span class="skill-name">C / C++</span><span
+                                    class="skill-level">Intermediate</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card reveal-stagger" data-percent="82">
+                            <div class="skill-icon" style="color:#b07219"><i class="fab fa-java"></i></div>
+                            <div class="skill-info"><span class="skill-name">Java</span><span
+                                    class="skill-level">Intermediate</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="82"></div>
+                            </div>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                        <div class="skill-card reveal-stagger" data-percent="75">
+                            <div class="skill-icon" style="color:#4479a1"><i class="fas fa-database"></i></div>
+                            <div class="skill-info"><span class="skill-name">SQL</span><span
+                                    class="skill-level">Intermediate</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card reveal-stagger" data-percent="70">
+                            <div class="skill-icon" style="color:#3776AB"><i class="fas fa-terminal"></i></div>
+                            <div class="skill-info"><span class="skill-name">TypeScript</span><span
+                                    class="skill-level">Intermediate</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="70"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-panel" id="tab-frontend">
+                    <div class="skills-grid">
+                        <div class="skill-card reveal-stagger" data-percent="90">
+                            <div class="skill-icon" style="color:#e34f26"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info"><span class="skill-name">HTML5</span><span
+                                    class="skill-level">Advanced</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card reveal-stagger" data-percent="88">
+                            <div class="skill-icon" style="color:#264de4"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info"><span class="skill-name">CSS3</span><span
+                                    class="skill-level">Advanced</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="88"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-card reveal-stagger" data-percent="85">
+                            <div class="skill-icon" style="color:#61dafb"><i class="fab fa-react"></i></div>
+                            <div class="skill-info"><span class="skill-name">React.js</span><span
+                                    class="skill-level">Advanced</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card reveal-stagger" data-percent="78">
+                            <div class="skill-icon" style="color:#38b2ac"><i class="fab fa-bootstrap"></i></div>
+                            <div class="skill-info"><span class="skill-name">Tailwind CSS</span><span
+                                    class="skill-level">Intermediate</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="78"></div>
+                            </div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-panel" id="tab-backend">
+                    <div class="skills-grid">
+                        <div class="skill-card reveal-stagger" data-percent="82">
+                            <div class="skill-icon" style="color:#68a063"><i class="fab fa-node-js"></i></div>
+                            <div class="skill-info"><span class="skill-name">Node.js</span><span
+                                    class="skill-level">Intermediate</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="82"></div>
+                            </div>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                        <div class="skill-card reveal-stagger" data-percent="80">
+                            <div class="skill-icon" style="color:#ff5733"><i class="fab fa-python"></i></div>
+                            <div class="skill-info"><span class="skill-name">Django / Flask</span><span
+                                    class="skill-level">Intermediate</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card reveal-stagger" data-percent="75">
+                            <div class="skill-icon" style="color:#4db33d"><i class="fas fa-leaf"></i></div>
+                            <div class="skill-info"><span class="skill-name">MongoDB</span><span
+                                    class="skill-level">Intermediate</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card reveal-stagger" data-percent="72">
+                            <div class="skill-icon" style="color:#336791"><i class="fas fa-database"></i></div>
+                            <div class="skill-info"><span class="skill-name">PostgreSQL</span><span
+                                    class="skill-level">Intermediate</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="72"></div>
+                            </div>
+                            <span class="skill-percent">72%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-panel" id="tab-tools">
+                    <div class="tools-grid">
+                        <div class="tool-chip reveal-stagger"><i class="fab fa-git-alt"></i> Git</div>
+                        <div class="tool-chip reveal-stagger"><i class="fab fa-github"></i> GitHub</div>
+                        <div class="tool-chip reveal-stagger"><i class="fab fa-docker"></i> Docker</div>
+                        <div class="tool-chip reveal-stagger"><i class="fas fa-cloud"></i> AWS</div>
+                        <div class="tool-chip reveal-stagger"><i class="fab fa-linux"></i> Linux</div>
+                        <div class="tool-chip reveal-stagger"><i class="fas fa-code-branch"></i> REST APIs</div>
+                        <div class="tool-chip reveal-stagger"><i class="fas fa-robot"></i> Machine Learning</div>
+                        <div class="tool-chip reveal-stagger"><i class="fas fa-fire"></i> Firebase</div>
+                        <div class="tool-chip reveal-stagger"><i class="fas fa-pencil-ruler"></i> Figma</div>
+                        <div class="tool-chip reveal-stagger"><i class="fas fa-terminal"></i> VS Code</div>
+                        <div class="tool-chip reveal-stagger"><i class="fas fa-jira"></i> Postman</div>
+                        <div class="tool-chip reveal-stagger"><i class="fas fa-network-wired"></i> GraphQL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ PROJECTS ══════════════ -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">04 // Projects</span>
+                <h2 class="section-title">My Work</h2>
+                <p class="section-subtitle">A selection of projects I'm proud of.</p>
+            </div>
+
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+
+                <div class="project-card reveal" data-category="ai">
+                    <div class="project-image">
+                        <div class="project-img-placeholder ai">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link" aria-label="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category-tag">AI / ML</div>
+                        <h3 class="project-title">AI Disease Predictor</h3>
+                        <p class="project-desc">Machine learning model that predicts diseases based on patient symptoms
+                            using Random Forest and SVM algorithms with 94% accuracy.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-image">
+                        <div class="project-img-placeholder web">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link" aria-label="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category-tag">Web App</div>
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-desc">Full-stack e-commerce platform with payment gateway integration,
+                            real-time inventory tracking, and admin dashboard.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-image">
+                        <div class="project-img-placeholder tool">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link" aria-label="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category-tag">Web App</div>
+                        <h3 class="project-title">Real-Time Chat App</h3>
+                        <p class="project-desc">Real-time messaging application with group chats, file sharing, read
+                            receipts, and end-to-end encryption using WebSockets.</p>
+                        <div class="project-tags">
+                            <span class="tag">Socket.io</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="mobile">
+                    <div class="project-image">
+                        <div class="project-img-placeholder mobile">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link" aria-label="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category-tag">Mobile</div>
+                        <h3 class="project-title">Expense Tracker App</h3>
+                        <p class="project-desc">Cross-platform mobile application for tracking personal finances, budget
+                            management, and spending analytics with visual charts.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Redux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="ai">
+                    <div class="project-image">
+                        <div class="project-img-placeholder ai2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link" aria-label="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category-tag">AI / ML</div>
+                        <h3 class="project-title">Object Detection System</h3>
+                        <p class="project-desc">Real-time object detection and classification using YOLOv8, deployed as
+                            a web service with live webcam support.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">YOLOv8</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-image">
+                        <div class="project-img-placeholder dev">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link" aria-label="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category-tag">Web App</div>
+                        <h3 class="project-title">Project Management Tool</h3>
+                        <p class="project-desc">Kanban-style project management application with team collaboration,
+                            task assignments, deadlines, and progress tracking.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Prisma</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ ACHIEVEMENTS ══════════════ -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">05 // Achievements</span>
+                <h2 class="section-title">Milestones & Awards</h2>
+                <p class="section-subtitle">Recognition for hard work and dedication.</p>
+            </div>
+            <div class="achievements-grid">
+
+                <div class="achievement-card reveal-stagger">
+                    <div class="achievement-icon gold">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>1st Place — National Hackathon 2024</h3>
+                        <p>Won first place at the Smart India Hackathon with an AI-powered healthcare solution among
+                            500+ teams nationwide.</p>
+                        <span class="achievement-date">March 2024</span>
+                    </div>
+                </div>
+
+                <div class="achievement-card reveal-stagger">
+                    <div class="achievement-icon silver">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Google Developer Student Club Lead</h3>
+                        <p>Selected as GDSC Lead for the university chapter, organizing workshops, events, and mentoring
+                            200+ students.</p>
+                        <span class="achievement-date">August 2023</span>
+                    </div>
+                </div>
+
+                <div class="achievement-card reveal-stagger">
+                    <div class="achievement-icon blue">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>AWS Certified Cloud Practitioner</h3>
+                        <p>Earned the AWS Cloud Practitioner certification, demonstrating proficiency in cloud computing
+                            concepts and AWS services.</p>
+                        <span class="achievement-date">January 2024</span>
+                    </div>
+                </div>
+
+                <div class="achievement-card reveal-stagger">
+                    <div class="achievement-icon green">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>LeetCode — 500+ Problems Solved</h3>
+                        <p>Achieved Knight rank on LeetCode by solving 500+ problems across arrays, trees, graphs, and
+                            dynamic programming.</p>
+                        <span class="achievement-date">Ongoing</span>
+                    </div>
+                </div>
+
+                <div class="achievement-card reveal-stagger">
+                    <div class="achievement-icon purple">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Best Paper Award — IEEE Conference</h3>
+                        <p>Research paper on "Federated Learning for Privacy-Preserving Medical Data Analysis" received
+                            the Best Paper Award at IEEE ICAICT 2024.</p>
+                        <span class="achievement-date">September 2024</span>
+                    </div>
+                </div>
+
+                <div class="achievement-card reveal-stagger">
+                    <div class="achievement-icon orange">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Open Source Contributor</h3>
+                        <p>Active contributor to 5+ open-source projects with 200+ GitHub contributions and multiple
+                            merged pull requests in major repos.</p>
+                        <span class="achievement-date">2023 – Present</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ HOBBIES ══════════════ -->
+    <section id="hobbies" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">06 // Hobbies</span>
+                <h2 class="section-title">Beyond the Code</h2>
+                <p class="section-subtitle">Things I enjoy outside of work.</p>
+            </div>
+            <div class="hobbies-grid">
+
+                <div class="hobby-card reveal-stagger">
+                    <div class="hobby-icon-wrap" style="--hue: 200deg">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Photography</h3>
+                    <p>Capturing moments and stories through the lens. I specialize in street photography and nature
+                        landscapes.</p>
+                </div>
+
+                <div class="hobby-card reveal-stagger">
+                    <div class="hobby-icon-wrap" style="--hue: 130deg">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Reading</h3>
+                    <p>Avid reader of tech books, sci-fi novels, and self-development literature. Currently reading
+                        "Atomic Habits".</p>
+                </div>
+
+                <div class="hobby-card reveal-stagger">
+                    <div class="hobby-icon-wrap" style="--hue: 280deg">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming</h3>
+                    <p>Strategy and puzzle games enthusiast. Gaming sharpens my analytical thinking and decision-making
+                        skills.</p>
+                </div>
+
+                <div class="hobby-card reveal-stagger">
+                    <div class="hobby-icon-wrap" style="--hue: 350deg">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Music</h3>
+                    <p>Playing the guitar and exploring various genres. Music fuels my creativity and helps me unwind
+                        after a long coding session.</p>
+                </div>
+
+                <div class="hobby-card reveal-stagger">
+                    <div class="hobby-icon-wrap" style="--hue: 40deg">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h3>Hiking</h3>
+                    <p>Weekend hikes to reconnect with nature. It's the perfect way to refresh my mind and gain new
+                        perspectives.</p>
+                </div>
+
+                <div class="hobby-card reveal-stagger">
+                    <div class="hobby-icon-wrap" style="--hue: 170deg">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing beautiful, user-friendly interfaces on Figma. I love the intersection of art and
+                        technology.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ RESUME ══════════════ -->
+    <section id="resume" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">07 // Resume</span>
+                <h2 class="section-title">My Resume</h2>
+                <p class="section-subtitle">A snapshot of my professional profile.</p>
+            </div>
+            <div class="resume-wrapper reveal">
+                <div class="resume-card">
+                    <div class="resume-header-bar">
+                        <div>
+                            <h2 class="resume-name">Pravanya</h2>
+                            <p class="resume-tagline">Full-Stack Developer · AI Enthusiast · Problem Solver</p>
+                            <div class="resume-contact-row">
+                                <span><i class="fas fa-envelope"></i> pravanya@email.com</span>
+                                <span><i class="fas fa-phone"></i> +91 98765 43210</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Hyderabad, India</span>
+                                <span><i class="fab fa-github"></i> github.com/pravanya</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary" id="downloadResume">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+
+                    <div class="resume-body">
+                        <div class="resume-col">
+                            <div class="resume-section-block">
+                                <h4><i class="fas fa-briefcase"></i> Experience</h4>
+                                <div class="resume-entry">
+                                    <strong>Full-Stack Developer Intern</strong>
+                                    <span class="resume-org">TechCorp Solutions · June 2024 – Present</span>
+                                    <ul>
+                                        <li>Built RESTful APIs serving 10k+ daily requests</li>
+                                        <li>Reduced frontend load time by 40% via code splitting</li>
+                                        <li>Implemented CI/CD pipelines with GitHub Actions</li>
+                                    </ul>
+                                </div>
+                                <div class="resume-entry">
+                                    <strong>Web Developer Intern</strong>
+                                    <span class="resume-org">StartupXYZ · Dec 2023 – Mar 2024</span>
+                                    <ul>
+                                        <li>Developed responsive UI components with React</li>
+                                        <li>Integrated third-party APIs for payment processing</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="resume-section-block">
+                                <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                                <div class="resume-entry">
+                                    <strong>B.Tech Computer Science & Engineering</strong>
+                                    <span class="resume-org">JNTU · 2021 – 2025 · CGPA 8.7</span>
+                                </div>
+                                <div class="resume-entry">
+                                    <strong>Intermediate (MPC)</strong>
+                                    <span class="resume-org">Sri Chaitanya · 2021 · 98.2%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-col">
+                            <div class="resume-section-block">
+                                <h4><i class="fas fa-code"></i> Technical Skills</h4>
+                                <div class="resume-skills-list">
+                                    <span class="resume-tag">Python</span>
+                                    <span class="resume-tag">JavaScript</span>
+                                    <span class="resume-tag">React.js</span>
+                                    <span class="resume-tag">Node.js</span>
+                                    <span class="resume-tag">Django</span>
+                                    <span class="resume-tag">MongoDB</span>
+                                    <span class="resume-tag">PostgreSQL</span>
+                                    <span class="resume-tag">Docker</span>
+                                    <span class="resume-tag">AWS</span>
+                                    <span class="resume-tag">Git</span>
+                                    <span class="resume-tag">Machine Learning</span>
+                                    <span class="resume-tag">REST APIs</span>
+                                </div>
+                            </div>
+
+                            <div class="resume-section-block">
+                                <h4><i class="fas fa-trophy"></i> Achievements</h4>
+                                <div class="resume-entry">
+                                    <strong>1st Place — Smart India Hackathon 2024</strong>
+                                    <strong>Best Paper — IEEE ICAICT 2024</strong>
+                                    <strong>AWS Certified Cloud Practitioner</strong>
+                                    <strong>GDSC Lead 2023–24</strong>
+                                </div>
+                            </div>
+
+                            <div class="resume-section-block">
+                                <h4><i class="fas fa-certificate"></i> Certifications</h4>
+                                <div class="resume-entry">
+                                    <span class="resume-org">AWS Cloud Practitioner · 2024</span>
+                                    <span class="resume-org">Meta Front-End Developer · 2023</span>
+                                    <span class="resume-org">Google Data Analytics · 2023</span>
+                                    <span class="resume-org">Deep Learning Specialization · 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ CONTACT ══════════════ -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">08 // Contact</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a project in mind? Let's create something great together.</p>
+            </div>
+            <div class="contact-grid">
+
+                <div class="contact-info reveal">
+                    <h3>Let's Connect</h3>
+                    <p>I'm currently open to new opportunities. Whether you have a project, question, or just want to
+                        say hello — my inbox is always open!</p>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:pravanya@email.com" class="contact-value">pravanya@email.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon-wrap"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+919876543210" class="contact-value">+91 98765 43210</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Hyderabad, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname" placeholder="John" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname" placeholder="Doe" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ──────────────── FOOTER ──────────────── -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="brand-bracket">&lt;</span>
+                <span class="brand-name">Pravanya</span>
+                <span class="brand-bracket">/&gt;</span>
+            </div>
+            <p class="footer-text">Designed & Built with <span style="color:#e25555">♥</span> by Pravanya · 2025</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
